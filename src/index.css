@@ -1,3 +1,16 @@
+html {
+  font-size: 15px;
+}
+
+:root {
+  --heading1: 3.33rem;
+  --heading2: 3.2rem;
+  --heading3: 2.4rem;
+  --large-bold: 1.66rem;
+  --medium-bold: 1.2rem;
+  --small-bold: 0.93rem;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
