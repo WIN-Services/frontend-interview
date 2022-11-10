@@ -1,30 +1,27 @@
-# WIN Front End Engineering Interview
+# Form Page
 
-## Interview Task
+## **`Assumptions made`**
+```
+Sanserif font can be used instead of Axiforma, since its not available in google Fonts anymore.
+```
+---
+## **`Actions that can be completed if provided extra time`**
 
-Build a responsive Contact Us form using this design spec:
 
-https://www.figma.com/file/6xNvWB4RmOb5pMT9DU6Gar/Front-End-Interview?node-id=0%3A1
+```
+Making the form responsive to fit mobile needs using @media Queries and @container Queries.
 
-There is no need to build any backend (api layer, server, database). For simulating form submission, you can do a POST to /api/contact
+Usage of Autofill of locations using the library react-places-complete.
 
-## Duration
+Addition of Hover effects and handling active state and focused state of inputs.
 
-Up to 2 hours.
+Validation for input fields.
+```
+----
+## **`Suggestions`**
 
-## Submission
-1.  Clone this repo
-2.  Build Contact Us Form. Suggested libraries
-    -  Material UI components - [https://material-ui.com/](https://material-ui.com/)
-    -  Address lookup - [https://www.npmjs.com/package/react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
-4.  Submit a Pull Request (PR)
-5.  In the PR, include a README that includes the following:
-    -  If you made any assumptions, what are they
-    -  Outline what else needs to be done if given more time
+```
+React Hook Forms library can be used for better form validations.
 
-## Evaluation
-We are looking for: 
-1. Responsive design (mobile + desktop)
-2. Adherence to brand standards
-3. Completeness
-4. Code clarity / readability
+Tailwind CSS more developer friendly than Material UI. Easier to handle custom CSS styles. 
+```
