@@ -1,0 +1,26 @@
+.details-container {
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.inspection-header,
+.franchising-header,
+.vendor-header {
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #1d2b4f;
+}
+
+.inspection-contact,
+.franchising-contact,
+.vendor-contact {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}

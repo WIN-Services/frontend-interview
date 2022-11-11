@@ -1,0 +1,77 @@
+.container {
+  padding: 52px 0px;
+  background: #eeeeee;
+  border-radius: 12px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  margin-bottom: 10%;
+}
+
+.header {
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+  text-align: center;
+}
+
+.sub-header {
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.subscribe-form input {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 12px 32px;
+  outline: none;
+  width: 370px;
+  height: 58px;
+}
+
+.subscribe-button {
+  padding: 16px 56px;
+  background: #d4a656;
+  color: rgb(255, 255, 255);
+  border: 2px solid #d4a656;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 25px;
+  }
+  .Ssub-header {
+    font-size: 14px;
+    padding: 0px 30px;
+  }
+  .subscribe-form {
+    padding: 20px;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+  }
+  .subscribe-button {
+    padding: 8px 56px;
+  }
+  .subscribe-form input {
+    width: 98%;
+  }
+}
