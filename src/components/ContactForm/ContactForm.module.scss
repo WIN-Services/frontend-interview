@@ -1,0 +1,141 @@
+@media (min-width: 700px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #ffffff;
+    padding: 17px 21px;
+    gap: 46px;
+  }
+  .contact-container > * {
+    padding: 2em 2em;
+  }
+}
+
+.contact-container {
+  box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02),
+    1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02);
+  border-radius: 20px;
+  padding: 17px 14px;
+  margin-bottom: 10%;
+}
+
+.contact-container > * {
+  padding: 1em;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
+.contact-details {
+  background: #fafafa;
+  border-radius: 20px;
+}
+
+@media (min-width: 700px) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.contact-form {
+  margin-top: 4em;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.contact-form input {
+  width: 85%;
+  padding: 20px 25px;
+  background: #ffffff;
+  border: 1px solid #eff0f7;
+  outline: none;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 10px;
+  margin-bottom: 43px;
+}
+
+.contact-form input::placeholder {
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6f6c90;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.message-box {
+  grid-column: 1/3;
+}
+
+.message-box textarea {
+  width: 85%;
+  background: #ffffff;
+  border: 1px solid #eff0f7;
+  padding: 20px 25px;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 10px;
+  outline: none;
+}
+
+.message-box textarea::placeholder {
+  font-family: "Axiforma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6f6c90;
+}
+
+.submit-button {
+  margin-top: 30px;
+  width: 130px;
+  background: #005981;
+  border-radius: 10px;
+  padding: 16px 32px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .submit-button {
+    margin-top: 20px;
+  }
+}
+
+.submit-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out;
+}
