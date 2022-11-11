@@ -83,7 +83,7 @@ const ContactForm = () => {
               disabled={isSubmitting}
               errorCondition={errors.PhoneNumber}
               errorMessage={errors.PhoneNumber?.message}
-              maxLength={12}
+              maxLength={13}
             />
             <InputField
               name="ZIPCode"
