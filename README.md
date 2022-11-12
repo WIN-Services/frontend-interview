@@ -28,3 +28,10 @@ We are looking for:
 2. Adherence to brand standards
 3. Completeness
 4. Code clarity / readability
+
+## If you made any assumptions, what are they
+1. Tried to save the space for more visibilty in less scrolling
+
+## Outline what else needs to be done if given more time
+1. Form validation
+2. Form construction with json data configuration
