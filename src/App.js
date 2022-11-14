@@ -1,16 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import Contact from './Components/Contact';
+import Container from '@mui/material/Container';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './App.css';
+
+const theme = createTheme({
+  typography: {
+    h4: {
+      color: "#004461"
+    },
+    subtitle2: {
+      color: "#004461"
+    },
+    h1: {
+      color: "#004461"
+    },
+    overline: {
+      color: "#2f2f2f"
+    },
+  }
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <ThemeProvider theme={theme}>
+        <Container maxWidth="lg">
+          <Contact />
+        </Container>
+      </ThemeProvider>
     </div>
   );
 }
