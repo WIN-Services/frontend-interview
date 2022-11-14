@@ -1,17 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
+import Form from "./components/Form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+	<div>
+	  <div className = "formPage">
+		<ContactUs></ContactUs>
+		<Form></Form>
+	  </div>
+	  <Footer></Footer>
+	</div>
   );
 }
 
