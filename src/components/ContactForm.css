@@ -1,0 +1,80 @@
+.contact-form {
+    margin-top: 40px;
+    /* border: 1px solid #000; */
+}
+
+.message-inp {
+    margin: 20px;
+    width: 350px;
+    padding:10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.msg-field {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-top: 20px;
+
+}
+
+::placeholder {
+    color: rgb(95, 94, 94);
+    opacity: 1; /* Firefox */
+    font-weight: 450;
+  }
+
+  .submit-btn {
+    margin: 25px;
+    padding: 15px 30px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgba(36, 36, 71, 0.952);
+    color: #fff;
+    border: none;
+    cursor: pointer
+  }
+
+  .submit-btn :hover {
+    background-color: rgba(36, 36, 71, 0.952);
+  }
+
+  .input-block {
+    width: 350px;
+    /* border: 1px solid #000; */
+    margin: 10px 10px 50px 10px;
+    padding:10px;
+}
+
+.text-field {
+    /* box-shadow: 10px 10px 10px 10px; */
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 784px) {
+    .message-inp {
+        /* margin: 20px; */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 783px) {
+    .btn-grp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-block {
+        margin: 10px;
+    }
+}

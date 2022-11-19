@@ -1,0 +1,38 @@
+.contactPage {
+    padding: 20px;
+}
+
+.resp-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid #000; */
+}
+
+.contact-page-main {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+h1 {
+    font-weight: 700;
+}
+h4 {
+    font-weight: 500;
+    font-size:larger;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .contact-page-main {
+        margin:0;
+        padding: 20px;
+        box-shadow: none;
+        border: 1px solid rgb(173, 173, 173);
+        /* border-radius: 0; */
+    }
+
+}
