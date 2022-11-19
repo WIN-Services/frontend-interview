@@ -1,0 +1,32 @@
+.input-block {
+    width: 350px;
+    /* border: 1px solid #000; */
+    margin: 10px 10px 50px 10px;
+    padding:10px;
+}
+
+.text-field {
+    /* box-shadow: 10px 10px 10px 10px; */
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+::placeholder {
+    color: rgb(95, 94, 94);
+    opacity: 1; /* Firefox */
+    font-weight: 450;
+  }
+
+h4 {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 784px) {
+    .input-block {
+        margin: 10px;
+    }
+    
+}

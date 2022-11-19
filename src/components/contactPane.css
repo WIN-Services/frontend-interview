@@ -1,0 +1,38 @@
+.contact-pane {
+    /* border: 1px solid #000; */
+    width: 30%;
+    padding: 20px 40px;
+    /* padding-left: 40px;
+    padding-top: 20px; */
+    /* justify-content: center; */
+    background-color: rgba(190, 190, 190, 0.219);
+    border-radius: 10px;
+}
+/* .contact-details {
+    display: block;
+} */
+
+.contact-details {
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1176px) {
+
+    .contact-pane {
+        width: 100%;
+    }
+
+    .contact-details {
+        justify-content: left;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .contact-pane {
+        padding-left: 20px
+    }
+}
