@@ -1,0 +1,56 @@
+
+
+.poster{
+    background-color: #eeeeee;
+    border-radius: 12px;
+    width: 90vw;
+    padding: 50px 100px;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    color: black;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin: 16px;
+}
+
+.poster>p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.inputSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* border: 1px solid red; */
+    margin-top: 56px;
+}
+
+.btn{
+    background-color: #D4A656;
+    color: white;
+    height: 60px;
+
+    border: 2px solid #D4A656;
+    border-radius: 10px;
+    padding: 16px 56px;
+
+}
+
+.input{
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 60px;
+}

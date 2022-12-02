@@ -1,0 +1,66 @@
+.box{
+    padding: 30px 50px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputbox{
+    background: #FFFFFF;
+border: 1px solid #EFF0F7;
+/* Form/Input */
+font-size: 15px;
+box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+border-radius: 10px;
+height: 50px;
+padding: 10px;
+width: 270px;
+}
+
+.lab{
+    font-family: 'Axiforma';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 160%;
+/* identical to box height, or 29px */
+
+
+/* Black */
+
+color: #000000;
+}
+
+.textbox{
+    background: #FFFFFF;
+    border: 1px solid #EFF0F7;
+    /* Form/Input */
+    font-size: 15px;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border-radius: 10px;
+padding: 10px;
+min-width: fit-content;
+}
+
+.btn{
+padding: 16px 32px;
+margin: 30px 0;
+gap: 10px;
+background: #005981;
+color: #EFF0F7;
+border-radius: 10px;
+}
+
+.btn:hover{
+    color: white;
+    font-weight: bolder;
+}
