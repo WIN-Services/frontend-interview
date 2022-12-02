@@ -1,0 +1,2 @@
+- This a contact us form of given assesment. I have made this using HTML , CSS and JS. I have tried my best to make it as the same as the given design.
+- If i get more time then i will work to make it more good design and also i will work  on the backend part to submit the form response using api layer,database.
