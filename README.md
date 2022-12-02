@@ -8,6 +8,9 @@ https://www.figma.com/file/6xNvWB4RmOb5pMT9DU6Gar/Front-End-Interview?node-id=0%
 
 There is no need to build any backend (api layer, server, database). For simulating form submission, you can do a POST to /api/contact
 
+## Features Added
+### All the required features have been added like responsiveness, POST request on submission on form etc.
+
 ## Future Scope
 #### We can add validations on all fields before sending data to the server.
 #### We can store these responses to improve our services.
