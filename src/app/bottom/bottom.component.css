@@ -1,0 +1,153 @@
+
+
+
+@media only screen and (min-width:800px) {
+    .deskview {
+        display: block;
+    }
+  
+    .mobview {
+        display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .deskview {
+        display: none;
+    }
+  
+    .mobview {
+        display: block;
+    }
+  }
+
+/*----------DESKTOP VIEW----------*/
+  @media only screen and (min-width: 800px) {
+
+    .box{
+        height: 309px;
+        
+        background: #EEEEEE;
+        border-radius: 12px;
+        }
+        
+        .deskview{
+            padding-left: 100px;
+        padding-right: 100px;
+        }
+        
+        .heading{
+        padding-top: 58px;
+        
+        /* Type@36 */
+        
+        font-family: 'Axiforma';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 160%;
+        
+        
+        }
+        
+        .sub-head{
+            font-family: 'Axiforma';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 16px;
+        
+        color: #000000;
+        }
+        
+        .c2{
+            background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        width: 370px;
+        height: 56px;
+        }
+        
+        .button{
+            display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 56px;
+        gap: 8px;
+        
+        height: 60px;
+        /* Secondary Color */
+        
+        background: #D4A656;
+        /* Secondary Color */
+        color: white;
+        border: 2px solid #D4A656;
+        border-radius: 10px;
+        }
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+    .box{
+        
+        background: #EEEEEE;
+        border-radius: 12px;
+        }
+        
+        
+        
+        .heading{
+        padding-top: 58px;
+        
+        /* Type@36 */
+        
+        font-family: 'Axiforma';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 160%;
+        
+        
+        }
+        
+        .sub-head{
+            font-family: 'Axiforma';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 16px;
+        
+        color: #000000;
+        }
+        
+        .c2{
+            background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        width: 170px;
+        height: 56px;
+        }
+        
+        .button{
+            display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 56px;
+        gap: 8px;
+        
+        height: 60px;
+        /* Secondary Color */
+        
+        background: #D4A656;
+        /* Secondary Color */
+        color: white;
+        border: 2px solid #D4A656;
+        border-radius: 10px;
+        }
+
+}
