@@ -28,3 +28,9 @@ We are looking for:
 2. Adherence to brand standards
 3. Completeness
 4. Code clarity / readability
+
+
+## Task 
+1. Create Contact US page using bootstrap react.
+2. Add Validtion 
+3. Responsive design (mobile + desktop)

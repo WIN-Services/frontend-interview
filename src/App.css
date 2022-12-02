@@ -1,33 +1,180 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+    font-family: "Axiforma";
+    src: url("./assets/fonts/Axiforma-Black.woff2") format("woff2"),
+      url("./assets/fonts/Axiforma-Black.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
   }
-  to {
-    transform: rotate(360deg);
+  
+  @font-face {
+    font-family: "Axiforma";
+    src: url("./assets/fonts/Axiforma-SemiBold.woff2") format("woff2"),
+      url("./assets/fonts/Axiforma-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
   }
-}
+  
+  @font-face {
+    font-family: "Axiforma";
+    src: url("./assets/fonts/Axiforma-Regular.woff2") format("woff2"),
+      url("./assets/fonts/Axiforma-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Axiforma";
+    src: url("./assets/fonts/Axiforma-Black.woff2") format("woff2"),
+      url("./assets/fonts/Axiforma-Black.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  body {
+    font-family: "Axiforma";
+  }
+  .bg-white {
+    background-color: #fff !important;
+  }
+  .contect-left-content-bx {
+    background-color: #fafafa;
+    padding: 21px 31px;
+    border-radius: 20px;
+    height: 100%;
+  }
+  .content-inner-bx {
+    background: #ffffff;
+    box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02),
+      1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02);
+    border-radius: 20px;
+    padding: 18px 21px;
+  }
+  .emaill-subscribe-bx {
+    background-color: #eeeeee !important;
+    padding: 52px;
+    border-radius: 12px;
+  }
+  
+  input {
+    background: #ffffff !important;
+    border: 1px solid #eff0f7 !important;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07) !important;
+    border-radius: 10px !important;
+    height: 66px !important;
+    font-size: 15px !important;
+    padding: 21px !important;
+  }
+  label {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .form-bx {
+    padding: 50px 100px 50px 30px;
+  }
+  .submit-button {
+    background: #005981 !important;
+    border-radius: 10px;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  input:focus {
+    border-color: #ddd !important;
+  }
+  textarea {
+    background: #ffffff !important;
+    border: 1px solid #eff0f7 !important;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07) !important;
+    border-radius: 10px !important;
+    font-size: 15px !important;
+    padding: 21px !important;
+  }
+  .list-bx li {
+    border: none !important;
+    background: none !important;
+    padding: 0 0 16px !important;
+  }
+  .contect-left-content-bx h1 {
+    margin-bottom: 32px !important;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .contect-left-content-bx h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: 000;
+    margin-bottom: 0;
+  }
+  .contect-left-content-bx span {
+    font-size: 12px;
+    font-weight: 400;
+    color: 000;
+  }
+  
+  .emaill-subscribe-bx h4 {
+    font-size: 36px;
+    font-weight: 700;
+    color: 3000;
+  }
+  .emaill-subscribe-bx p {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+  }
+  .emaill-subscribe-bx form {
+    margin-top: 30px;
+  }
+  .emaill-subscribe-bx input {
+    background: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    border-radius: 10px !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    height: 56px !important;
+    width: 370px;
+    margin-right: 20px;
+  }
+  
+  .emaill-subscribe-bx button {
+    background: #d4a656;
+    border: 2px solid #d4a656;
+    border-radius: 10px;
+    padding: 12px 56px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .emaill-subscribe-bx button:hover {
+    background: #d4a656;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .form-bx {
+      padding: 20px;
+    }
+    .emaill-subscribe-bx {
+      padding: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .emaill-subscribe-bx button {
+      padding: 12px 20px;
+    }
+    .emaill-subscribe-bx input {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+    .emaill-subscribe-bx .d-flex {
+      -ms-flex-direction: column !important;
+      flex-direction: column !important;
+    }
+  }
+  
