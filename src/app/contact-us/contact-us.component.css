@@ -1,0 +1,213 @@
+@media only screen and (min-width: 800px) {
+    .details{
+        width: 458px;
+        height: 688px;
+        padding-left: 31px;
+padding-top: 21px;
+    }
+    .contact-block{
+        height: 723px;
+    }
+
+    .f1{
+        width: 100%;
+        padding-right: 129px;
+        
+    }
+    .c1{
+        width: 295px;
+        height: 66px;
+    }
+    .c2{
+        width: 271px;
+        height: 66px;
+    }
+    .c3{
+        height: 168px;
+        width: 594px;
+    }
+    .button{
+        width: 129px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .details{
+        width: 100%;
+    }
+
+    .f1{
+        width: 100%;
+        
+    }
+    .c1{
+        width: 180px;
+        height: 66px;
+    }
+    .c2{
+        width: 180px;
+        height: 66px;
+    }
+    .c3{
+        height: 168px;
+        width: 380px;
+    }
+    .button{
+        width: 80px;
+    }
+}
+
+.deskview {
+    display: block;
+  }
+  
+  .mobview {
+    display: none;
+  }
+  
+  @media only screen and (min-width:800px) {
+    .deskview {
+        display: block;
+    }
+  
+    .mobview {
+        display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .deskview {
+        display: none;
+    }
+  
+    .mobview {
+        display: block;
+    }
+  }
+
+
+/*-------SIMILAR FOR BOTH MOBILE AND DESKTOP---------*/
+
+.deskview{
+    padding-left: 100px;
+padding-right: 100px;
+padding-top: 104px;
+}
+
+.details{
+    background: #FAFAFA;
+border-radius: 20px;
+
+
+}
+
+.contact-block{
+    background: #FFFFFF;
+box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02), 1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02);
+border-radius: 20px;
+padding-top: 18px;
+
+}
+.heading{
+    font-family: 'Axiforma';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 160%;
+color: #000000;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.sub-head{
+    font-family: 'Axiforma';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 160%;
+/* identical to box height, or 29px */
+
+
+/* Text/Tittle */
+
+color: #1D2B4F;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-top: 32px;
+}
+
+.child{
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+/* identical to box height, or 200% */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-top: 7px;
+}
+
+
+
+.form-control{
+    box-sizing: border-box;
+    
+    
+
+background: #FFFFFF;
+border: 1px solid #EFF0F7;
+/* Form/Input */
+
+box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+border-radius: 10px;
+}
+
+
+.form-label{
+    font-family: 'Axiforma';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 160%;
+/* identical to box height, or 29px */
+
+
+/* Black */
+
+color: #000000;
+}
+
+.button{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 10px;
+
+width: 129px;
+height: 58px;
+
+/* Primary color */
+
+background: #005981;
+color: white;
+border-radius: 10px;
+margin-top: 46.54px;
+border: 0px solid #005981;
+}
