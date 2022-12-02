@@ -1,0 +1,24 @@
+.contact_details {
+    background: #eef8ff;
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 20px 0 rgb(57 56 56 / 10%);
+    -webkit-box-shadow: 10px 10px 20px 0 rgb(57 56 56 / 10%);
+    -moz-box-shadow: 10px 10px 20px 0 rgba(57, 56, 56, .1); */
+}
+
+.contact_details h1 {
+    margin-bottom: 20px;
+}
+
+.contact_info {
+    margin-top: 35px;
+}
+
+.contact_info h3 {
+    margin-bottom: 10px;
+}
+
+.contact_info p {
+    color: #3a3a3a;
+}
