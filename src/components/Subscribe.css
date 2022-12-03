@@ -1,0 +1,39 @@
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 52px 184px;
+    gap: 10px;
+    background: #EEEEEE;
+    border-radius: 12px;
+    margin: 2rem;
+}
+
+.para-subs{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 160%;
+}
+.subsForm{
+    display: flex;
+}
+
+.field{
+    margin: 1rem 0.5rem;
+}
+.subBtn{
+    margin: 1rem 0.5rem;
+}
+
+@media only screen and (max-width: 600px){
+    .subscribe{
+        margin: 2rem;
+        padding: 0.4rem;
+    }
+    .subsForm{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-subHeading{
+  font-weight: 800;
+  font-size: 1.45rem;
+  line-height: 160%;
+  color: black; 
+}
+.text-heading{
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 160%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  .text-heading{
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 160%;
+  }
+}
+
