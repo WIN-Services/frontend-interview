@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;1,100&family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f3f2ec;
+}
+span {
+  color: #1d2b4f;
+  font-weight: bold;
+  font-size: 18px;
+}
+#contact-section {
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  height: 50%;
+}
+ul {
+  margin: 0;
+  display: inline;
+}
+li {
+  margin: 0;
+}
+
+.contact-container {
+  margin: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 10px solid #fff;
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.contact-info {
+  width: 10%;
+  padding: 0 5% 10% 5%;
+  border-radius: 30px;
+}
+
+.contact-wrapper {
+  width: 60%;
+  padding: 8% 5% 10% 5%;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-info {
+  width: 40%;
+  padding: 0% 5% 10% 5%;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+
+.contact-wrapper {
+  background-color: #fff;
+  padding: 5% 5% 10% 5%;
+  border-radius: 0 10px 10px 0;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+.links {
+  justify-content: center;
+  padding-top: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.form-item {
+  position: relative;
+}
+
+label,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 4px;
+  /* margin-bottom: 20px;
+  padding: 12px; */
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+
+.submit-btn {
+  background-color: #fd917e;
+  filter: drop-shadow(2px 2px 3px #0003);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(16px, 1.6vw, 18px);
+  display: block;
+  padding: 12px 20px;
+  margin: 2px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.submit-btn:active {
+  transform: scale(1.1, 1.1);
+  filter: sepia(0.5);
+}
+
+.contact-right {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-row .input-group {
+  flex-basis: 45%;
+}
+input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: rgb(142, 148, 148);
+}
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: rgb(142, 148, 148);
+}
+button {
+  margin-top: 20px;
+  padding: 10px 5px;
+  background: teal;
+  width: 100px;
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.contact-left h3 {
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.email-container {
+  width: 68%;
+  height: 300px;
+  margin: 50px auto;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.email-container p {
+  font-size: 15px;
+}
+.news {
+  text-align: center;
+  padding: 5% 15%;
+}
+h2 {
+  margin-top: 30px;
+}
+input[type="email"] {
+  width: 270px;
+  margin: 8px 0;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 18px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.112);
+}
+.btn {
+  margin-left: 10px;
+  padding: 16px 10px 13px 10px;
+  border-radius: 10px;
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  background-color: rgb(203, 128, 16);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.input::placeholder {
+  font-size: 12px;
+}
+.input {
+  box-shadow: 0px 2px 8px #eff0f6;
+  border: none;
+  outline: none;
+}
+label {
+  font-weight: 500;
+}
+.btn-2 {
+  background: #005981;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+Button {
+  padding: 0.9rem 1rem;
+  text-transform: uppercase;
+  background-color: #005981;
+  font-weight: 700;
+  text-align: center;
+}
+.btn-2:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 550px) {
+  input[type="email"] {
+    position: relative;
+    width: 40%;
+  }
+  .btn {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .links {
+    padding-top: 30px;
+  }
+
+  img {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-container {
+    width: 95%;
+    margin: 8% 5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-info,
+  .contact-wrapper {
+    width: 100%;
+  }
+
+  .contact-info {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .contact-wrapper {
+    border-radius: 0 0 10px 10px;
+  }
+}
