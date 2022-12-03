@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import Button from './components/Button';
 import Contacthp from './components/Contacthp';
@@ -22,17 +23,17 @@ function App() {
               <Textbox ofType={"text"} st="normal" />
             </div>
             <div className="element">
-              <Label title="Name" />
+              <Label title="Email" />
               <Textbox ofType={"text"} st="normal" />
             </div>
           </div>
           <div className="down">
             <div className="element">
-              <Label title="Name" />
+              <Label title="Phone Number" />
               <Textbox ofType={"text"} st="normal" />
             </div>
             <div className="element">
-              <Label title="Name" />
+              <Label title="Zip Code" />
               <Textbox ofType={"text"} st="normal" />
             </div>
           </div>

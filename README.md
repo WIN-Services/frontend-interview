@@ -8,23 +8,10 @@ https://www.figma.com/file/6xNvWB4RmOb5pMT9DU6Gar/Front-End-Interview?node-id=0%
 
 There is no need to build any backend (api layer, server, database). For simulating form submission, you can do a POST to /api/contact
 
-## Duration
+## Features Added
 
-Up to 2 hours.
+Completely responsive frontend done in React.js with making components for every repititive element so as to reduce code redundancy.
 
-## Submission
-1.  Clone this repo
-2.  Build Contact Us Form. Suggested libraries
-    -  Material UI components - [https://material-ui.com/](https://material-ui.com/)
-    -  Address lookup - [https://www.npmjs.com/package/react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
-4.  Submit a Pull Request (PR)
-5.  In the PR, include a README that includes the following:
-    -  If you made any assumptions, what are they
-    -  Outline what else needs to be done if given more time
+## Future Scope
 
-## Evaluation
-We are looking for: 
-1. Responsive design (mobile + desktop)
-2. Adherence to brand standards
-3. Completeness
-4. Code clarity / readability
+We can design other pages for this website if required using the color pallete given in the figma file and other major components.
