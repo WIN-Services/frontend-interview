@@ -1,17 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@mui/material";
+import FormDisplay from "./components/FormDisplay";
+import './app.css'
+import Footercomponent from "./components/Footercomponent";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <Box sx={{margin:"90px 150px"}}>
+      <FormDisplay/>
+      <Footercomponent/>
+    </Box>
   );
 }
 
