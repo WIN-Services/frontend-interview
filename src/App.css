@@ -1,33 +1,149 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.box{
+  margin: 100px;
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02), 1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02);
+  border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact{
+  width: 35%;
+  background-color: #FAFAFA;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.h4{
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 160%;
+}
+
+.h5{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.text-small{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.label{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 160%;
+  padding: 0 0 10px 0;
+}
+
+.form{
+  width: 65%;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.top, .down{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+/* .element{
+  width: 100%;
+} */
+
+.normal{
+  border: 1px solid #EFF0F7;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.input-text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4F4F4F;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.area{
+  width: 85%;
+  border: 1px solid #EFF0F7;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  height: 200px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.submit{
+  background: #005981;
+  border-radius: 10px;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 130px;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.element{
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h3{
+  font-weight: 700;
+font-size: 36px;
+line-height: 160%;
+}
+
+footer{
+  text-align: center;
+}
+
+.med-reg{
+  font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+}
+
+.sub{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.subscribe{
+  border-radius: 10px;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 130px;
+  border: none;
+  color: white;
+  background: #D4A656;
 }
