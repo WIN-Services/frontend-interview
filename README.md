@@ -28,3 +28,8 @@ We are looking for:
 2. Adherence to brand standards
 3. Completeness
 4. Code clarity / readability
+
+
+## Solution by Prashnat Lodhi
+Please Review It.
+
