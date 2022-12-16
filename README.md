@@ -1,30 +1,22 @@
 # WIN Front End Engineering Interview
 
-## Interview Task
 
-Build a responsive Contact Us form using this design spec:
 
-https://www.figma.com/file/6xNvWB4RmOb5pMT9DU6Gar/Front-End-Interview?node-id=0%3A1
+# My Assumptions
 
-There is no need to build any backend (api layer, server, database). For simulating form submission, you can do a POST to /api/contact
+1. I have Installed NPM Firstly in this directory.
+2. In the "src" folder I have created 3 Components named - "contaactdetail.js"; "App.js"; "index.js".
+3. I have used Bootstrap in this Project.
+4. I have created object named "contactdetail" in the contactdetail.js file.
+5. I have created a Basic Form using Bootstrap in "index.js" file.
+6. I have created router for submitting the form to /api/contact.
 
-## Duration
 
-Up to 2 hours.
 
-## Submission
-1.  Clone this repo
-2.  Build Contact Us Form. Suggested libraries
-    -  Material UI components - [https://material-ui.com/](https://material-ui.com/)
-    -  Address lookup - [https://www.npmjs.com/package/react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
-4.  Submit a Pull Request (PR)
-5.  In the PR, include a README that includes the following:
-    -  If you made any assumptions, what are they
-    -  Outline what else needs to be done if given more time
 
-## Evaluation
-We are looking for: 
-1. Responsive design (mobile + desktop)
-2. Adherence to brand standards
-3. Completeness
-4. Code clarity / readability
+# Outline what else needs to be done if given more time
+
+
+1. I can add new Features to this webpage.
+2. I can do different type of testing to the form.
+3. I can create Backend using Nodejs and MongoDB for Database.
