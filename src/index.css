@@ -1,13 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@200;300;400&display=swap');
+
+:root {
+    --bg-color: #ffffff;
+    --primary-color: #ffffff;
+    --secondary-color: rgb(0, 0, 0);
+    --text-color: rgb(0, 0, 0);
+    --text-color-2: rgb(0, 0, 0);
+    --overlay-color: rgba(255, 255, 255, 0.63);
+}
+
+[data-theme="light"] {
+    --bg-color: #000000;
+    --primary-color: #000000;
+    --secondary-color: rgb(255, 255, 255);
+    --text-color: rgb(255, 255, 255);
+    --text-color-2: rgb(255, 255, 255);
+    --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-color: var(--bg-color);
+    color: 4F4F4F;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 60px;
+    border-left: 10px solid var(--primary-color);
+    border-right: 10px solid var(--primary-color);
+}
+
+.Container {
+    position: absolute;
+    left: 6.94%;
+    right: 6.94%;
+    top: 7.94%;
+    bottom: 36.87%;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.section{
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 20px;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Inter;
+    color: #000000;
+}
+
+
+strong {
+    color: #000080;
+    font-size: large;
+    font-weight: bolder;
+    
+    
+
+
+}
+
+address {
+    padding-left: 25px;
+
+}
+
+.term {
+    font-family: Inter;
+    color: #000000;
+}
+
+* {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 70%;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+p {
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.ovhidden {
+    overflow: hidden;
+}
+
+.text_2,
+.text_2:hover {
+    color: var(--text-color-2);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.cursor__dot div {
+    z-index: 999999 !important;
+}
+
+.cursor__dot div:last-child {
+    filter: invert(1);
+    background-color: var(--primary-color) !important;
+}
+
+.cursor__dot div:first-child {
+    filter: invert(1);
+    background-color: var(--overlay-color) !important;
+}
+
+.color_pr {
+    color: var(--primary-color) !important;
+}
+
+.color_sec {
+    color: var(--secondary-color);
+}
+
+.contact__form .form-control {
+    padding: 1.375rem .75rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    background: #FFFFFF;
+    border: 1px solid #EFF0F7;
+    /* Form/Input */
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border-radius: 10px;
+}
+
+.contact__form input.form-control {
+    margin-bottom: 2em;
+    height:45%;
+    width: 100%;
+    
+}
+
+textarea.form-control {
+    padding-left: 0.8rem;
+    width: 85%;
+}
+
+.loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    z-index: 999999999;
+    background: var(--text-color);
+    transform: translateX(100%);
+    animation: shift-rightwards 1s ease-in-out infinite;
+    animation-delay: .3s;
+}
+
+@keyframes shift-rightwards {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(0%);
+    }
+
+    60% {
+        transform: translateX(0%);
+
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background: #005981;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 129px;
+    height: 58px;
+    background: #005981;
+    border-radius: 10px;
+}
+.btn:hover{
+    border-style:solid;
+    border-color: #000000;
+}
+
+._btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 56px;
+    gap: 8px;
+    position: absolute;
+    height: 60px;
+    left: 60.76%;
+    width: 15%;
+    right: 15.05%;
+    top: calc(50% - 60px/2 + 72.5px);
+    /* Secondary Color */
+    background: #D4A656;
+    /* Secondary Color */
+    border: 2px solid #D4A656;
+    border-radius: 12px;
+    color: #EEEEEE;
+
+}
+
+._btn:hover {
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+.rounded {
+    position: absolute;
+    height: 60px;
+    right: 60.76%;
+    left: 27.05%;
+    top: calc(50% - 60px/2 + 72.5px);
+    bottom: 0.98%;
+    width: 30%;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.mb-5 {
+    background: #FAFAFA;
+    margin: 2%;
+    width: 32%;
+    border-radius: 20px;
+    /* padding-right: 20px; */
+}
+
+.mb-6 {
+    margin: 2%;
+    width: 60%;
+}
+
+.mb-4 {
+    background-color: #FFFFFF;
+}
+
+.contact__form {
+    background: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 184px;
+    gap: 10px;
+    position: absolute;
+    width: 1232px;
+    height: 309px;
+    /* left: 101px; */
+    margin-bottom: 500px;
+    top: 750px;
+    /* bottom: 1000px; */
+    background: #EEEEEE;
+    border-radius: 17px;
+}
+
+.fs {
+    align-items: center;
+
+}
+
+
+@media(max-width:500px) {
+    html {
+        font-size: 80%;
+    }
+
+    .btn {
+        width: 20%;
+        height: 70%;
+    }
+
+    ._btn {
+        width: 20%;
+        height: 13%;
+    }
+
+    #Email {
+        height: 13%;
+        width: 44%;
+
+        left: 13%;
+    }
+
+    strong {
+        font-size: 105%;
+    }
+
+    h1 {
+        font-size: 170%;
+    }
+
+    p {
+        font-size: 80%;
+        align-items: center;
+    }
+
+    span {
+        align-items: center;
+
+    }
+
+
+
 }
