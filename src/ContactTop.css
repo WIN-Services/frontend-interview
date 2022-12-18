@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+#topCont {
+  background-color: #ffffff; 
+  
+  width: 90vw;
+  border-radius: 20px;
+  box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02), 1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02);
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 21px;
+  margin: 0 auto;
+}
+
+#leftCont{
+    background-color: #FAFAFA;
+    display: inline-block;
+    margin-top: 3vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 3%;
+}
+
+#heading{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 200%;
+    line-height: 50%;
+    margin-bottom: 8vh;
+    text-align: left;
+    font-family: 'Open Sans';
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+#commonDiv{
+    margin-left: 7%;
+    margin-top: 0%;
+    font-family: 'Open Sans';
+}
+
+
+
+#rightCont{
+    background-color: #ffffff;
+    display: inline-block;
+    
+    margin-top: 3vh;
+    margin-left: 2%;
+}
+
+#commondiv2{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 7% !important;
+}
+
+#input1{
+   display: inline-block;
+}
+
+#input2{
+   display: inline-block;
+}
+
+#commondiv3{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 4% !important;
+}
+#submit {
+
+  background: #005981;
+  border: 2px solid#005981;
+  border-radius: 10px;
+  padding: 7% 15%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #005981;
+  font-weight: 700;
+  }
+
+  #input1 > div > textarea{
+        padding-left:20px;
+        padding-top: 25px;
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+        #submit{
+            padding:16px 26px;
+            font-size:101%;
+        }
+  }
