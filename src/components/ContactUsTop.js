@@ -93,24 +93,24 @@ body: JSON.stringify(formValues) // body data type must match "Content-Type" hea
                    <Grid container sm={10} md={10} lg={12} id='commondiv2'>
                    <Grid container sm={10} md={10} lg={6} id='input1'>
                             <h4 >Name</h4>
-                            <RightContInput placeholder='Full Name' name="fullname" value={formValues.fullname} onChange={handleInputChange} style={{width: '90%'}}/>
+                            <RightContInput placeholder='Full Name' name="fullname" pattern="[A-Za-z]" value={formValues.fullname} required type="text" onChange={handleInputChange} style={{width: '90%'}}/>
                     </Grid>
 
                     <Grid container sm={10} md={10} lg={6} id='input2' >
                             <h4 >Email</h4>
-                            <RightContInput placeholder='xyz@abc.com' name="email" value={formValues.email} onChange={handleInputChange} style={{width: '90%'}} />
+                            <RightContInput placeholder='xyz@abc.com' name="email" value={formValues.email} onChange={handleInputChange} type="email" style={{width: '90%'}} />
                     </Grid>
                     </Grid>
 
                     <Grid container sm={10} md={10} lg={12} id='commondiv3'>
                    <Grid container sm={10} md={10} lg={6} id='input1'>
                             <h4 >Phone Number</h4>
-                            <RightContInput placeholder='(123) 456-7890' name="phoneno" value={formValues.phoneno} onChange={handleInputChange} style={{width: '90%'}}/>
+                            <RightContInput placeholder='(123) 456-7890' name="phoneno" value={formValues.phoneno} onChange={handleInputChange} minlength="10" maxlength="10" type="number" style={{width: '90%'}}/>
                     </Grid>
 
                     <Grid container sm={10} md={10} lg={6} id='input2' >
                             <h4 >ZIP Code</h4>
-                            <RightContInput placeholder='XXXXX' name="zipcode" value={formValues.zipcode} onChange={handleInputChange} style={{width: '90%'}} />
+                            <RightContInput placeholder='XXXXX' name="zipcode" maxlength="5" minlength="5" type="number" value={formValues.zipcode} onChange={handleInputChange} style={{width: '90%'}} required/>
                     </Grid>
                     </Grid>
                     
