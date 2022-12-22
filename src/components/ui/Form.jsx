@@ -41,6 +41,7 @@ const Form = () => {
             className={classes.input}
             placeholder="Full Name"
             fullWidth
+            required
           />
         </Grid>
         <Grid item xs={12} sm={5} m={1}>
@@ -52,6 +53,7 @@ const Form = () => {
             placeholder="xyz@abc.com"
             fullWidth
             className={classes.input}
+            required
           />
         </Grid>
         <Grid item xs={12} sm={5} m={1}>
@@ -63,6 +65,7 @@ const Form = () => {
             className={classes.input}
             placeholder="(123) 456-7890"
             fullWidth
+            required
           />
         </Grid>
         <Grid item xs={12} sm={5} m={1}>
@@ -70,7 +73,12 @@ const Form = () => {
             Zip Code
           </Typography>
 
-          <TextField className={classes.input} placeholder="XXXXX" fullWidth />
+          <TextField
+            className={classes.input}
+            required
+            placeholder="XXXXX"
+            fullWidth
+          />
         </Grid>
         <Grid item xs={12} sm={10.3} m={1}>
           <Typography variant="h5" sx={{ alignItem: "left" }}>
