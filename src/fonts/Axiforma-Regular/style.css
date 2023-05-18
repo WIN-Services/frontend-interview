@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: local('Axiforma Redular'), local('Axiforma-Redular'),
+        url('Axiforma-Regular.woff2') format('woff2'),
+        url('Axiforma-Regular.woff') format('woff'),
+        url('Axiforma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
