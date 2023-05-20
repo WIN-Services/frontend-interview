@@ -1,17 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import {styled} from '@mui/system';
+import ContactSection, {theme} from './components/ContactSection';
+import SubscribeToEmail from './components/SubscribeToEmailSection';
+
 import './App.css';
+
+const MainWrapper = styled('div')({
+  padding: '104px 100px 113px 100px',
+  position: 'relative',
+  [theme.breakpoints.down('md')]: {
+    display: 'block',
+    width: '100vw',
+    padding: '30px 20px',
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <MainWrapper>
+      <ContactSection />
+      <SubscribeToEmail />
+    </MainWrapper>
   );
 }
 
