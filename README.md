@@ -1,30 +1,25 @@
 # WIN Front End Engineering Interview
 
-## Interview Task
+# Assumptions
 
-Build a responsive Contact Us form using this design spec:
+<!--
+-- no clarity on implementation of Address lookup library - https://www.npmjs.com/package/react-places-autocomplete .
+-- no Mobile design is provided to stacked the columns
+-- could not find "Axiforma" Font on open source platform so used "Roboto" from google fonts
+-->
 
-https://www.figma.com/file/6xNvWB4RmOb5pMT9DU6Gar/Front-End-Interview?node-id=0%3A1
+# Outline what else needs to be done if given more time
 
-There is no need to build any backend (api layer, server, database). For simulating form submission, you can do a POST to /api/contact
+<!--
+-- if more time was given would have created a separate style system with All brand guidelines declarion and utilities classes taking reusibility into accounts
 
-## Duration
+-- Would have created more components to make the code more clean and readable
+-- Would have implemented Field validations with error message and colors
+-- Would have implemented Button with Gradients with Separated Button Component
+ -->
 
-Up to 2 hours.
+# feedback
 
-## Submission
-1.  Clone this repo
-2.  Build Contact Us Form. Suggested libraries
-    -  Material UI components - [https://material-ui.com/](https://material-ui.com/)
-    -  Address lookup - [https://www.npmjs.com/package/react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
-4.  Submit a Pull Request (PR)
-5.  In the PR, include a README that includes the following:
-    -  If you made any assumptions, what are they
-    -  Outline what else needs to be done if given more time
-
-## Evaluation
-We are looking for: 
-1. Responsive design (mobile + desktop)
-2. Adherence to brand standards
-3. Completeness
-4. Code clarity / readability
+<!--
+-- MUI was not really required for small assessment task custom style would have given more indepth of css knowledge
+ -->
