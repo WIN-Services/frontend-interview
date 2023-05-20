@@ -126,7 +126,7 @@ export default function ContactUs() {
             fullWidth
             id="number"
             name="number"
-            placeholder="Phone Number"
+            placeholder="(123) 456-7890"
             variant="standard"
             sx={{ ...leftInputStyle, width: '100%',
             '@media (max-width: 600px)': {
@@ -144,7 +144,7 @@ export default function ContactUs() {
             fullWidth
             id="zipcode"
             name="zipcode"
-            placeholder="Zip Code"
+            placeholder="XXXXX"
             variant="standard"
             sx={{ ...rightInputStyle, width: '80%',
             '@media (max-width: 600px)': {
