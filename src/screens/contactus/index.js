@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, TextField, Typography} from "@material-ui/core";
+import {CONTACT_URL} from "../../config/api"
 
 const ContactUs = () => {
     return <section className={"container contact-section-wrapper"}>

@@ -29,7 +29,6 @@ body {
 .container {
     margin: 3rem auto;
     max-width: 75%;
-    box-shadow: 0 54px 54px rgba(74, 58, 255, 0.02), 1px 4px 104px rgba(20, 20, 43, 0.04), 0 98px 66px rgba(19, 18, 66, 0.02);
     border-radius: var(--theme-border-radius);
     padding: var(--theme-padding);
 }
@@ -74,6 +73,7 @@ input[id="sub-email"]::placeholder {
         display: flex;
         gap: 1rem;
         height: 723px;
+        box-shadow: 0 54px 54px rgba(74, 58, 255, 0.02), 1px 4px 104px rgba(20, 20, 43, 0.04), 0 98px 66px rgba(19, 18, 66, 0.02);
     }
 
     .contact-section-info {

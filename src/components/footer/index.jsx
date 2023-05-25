@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, TextField, Typography} from "@material-ui/core";
+import {SUBSCRIBE_URL} from "../../config/api";
 
 const Footer = () => {
     const submitForm = (event) => {
