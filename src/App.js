@@ -1,18 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import {ThemeProvider} from "@material-ui/core";
+import Screens from "./screens";
+import {theme} from "./config/theme";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <ThemeProvider theme={theme}>
+            <Screens/>
+        </ThemeProvider>
+    );
 }
-
-export default App;
