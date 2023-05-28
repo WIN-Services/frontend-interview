@@ -1,33 +1,58 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  row-gap: 60px;
+  padding: 32px 16px;
+  background-color: #f5f5f5;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (min-width: 872px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    padding: 104px 100px 113px;
+    background-color: #f5f5f5;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --input-field-width: 200px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@font-face {
+  font-family: AxiformaThin;
+  src: url("./fonts/AxiformaThin.ttf");
+}
+
+@font-face {
+  font-family: Axiforma;
+  src: url("./fonts/Axiforma-Regular.ttf");
+}
+
+@font-face {
+  font-family: AxiformaMedium;
+  src: url("./fonts/AxiformaMedium.ttf");
+}
+
+@font-face {
+  font-family: AxiformaBold;
+  src: url("./fonts/AxiformaBold.ttf");
+}
+
+@font-face {
+  font-family: AxiformaExtraBold;
+  src: url("./fonts/AxiformaExtraBold.ttf");
 }
