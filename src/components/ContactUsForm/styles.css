@@ -1,0 +1,189 @@
+.contact-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 21px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: inherit;
+}
+
+.contact-details {
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 21px 24px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-family: AxiformaExtraBold;
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.department-name {
+  font-family: AxiformaBold;
+  color: #1d2b4f;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.contact-email-phone {
+  font-family: "Rubik";
+  font-size: 12px;
+  line-height: 24px;
+  width: max-content;
+  margin-bottom: 16px;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 44px;
+  margin-bottom: 40px;
+}
+
+.form-wrapper {
+  padding: 32px 16px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.contact-us-input {
+  border: 1px solid #eff0f7;
+  font-family: AxiformaThin;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 8px;
+  color: #6f6c90;
+  width: 100%;
+  min-width: var(--input-field-width);
+}
+
+.field-wrapper {
+  min-width: var(--input-field-width);
+  width: 100%;
+}
+
+.textarea-field-wrapper {
+  flex: 1;
+  width: max-content;
+  min-width: var(--input-field-width);
+  max-width: 500px;
+}
+
+.form-field-label {
+  font-family: AxiformaMedium;
+  margin-bottom: 8px;
+}
+
+.contact-us-textarea {
+  border: 1px solid #eff0f7;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 21px 26px;
+  width: 100%;
+  min-width: var(--input-field-width);
+  min-height: 120px;
+  font-family: "DM Sans";
+  color: #6f6c90;
+}
+
+.submit-btn {
+  padding: 16px 32px;
+  font-family: AxiformaBold;
+  border-radius: 10px;
+  background-color: #005981;
+  border: none;
+  color: white;
+}
+
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 576px) {
+  .contact-us-wrapper {
+    flex-direction: row;
+  }
+
+  .contact-details {
+    padding: 21px 100px 21px 31px;
+  }
+
+  .section-title {
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+
+  .department-name {
+    font-family: AxiformaBold;
+    color: #1d2b4f;
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .contact-email-phone {
+    font-family: "Rubik";
+    font-size: 12px;
+    line-height: 24px;
+    width: max-content;
+    margin-bottom: 16px;
+  }
+
+  .form-wrapper {
+    padding: 52px 64px 70px 46px;
+  }
+
+  .contact-us-input {
+    padding: 21px 26px;
+  }
+
+  .field-wrapper {
+    min-width: var(--input-field-width);
+    width: calc((100% - 20px) / 2);
+  }
+
+  .textarea-field-wrapper {
+    flex: 1;
+    width: max-content;
+    max-width: 700px;
+  }
+
+  .form-field-label {
+    font-family: AxiformaMedium;
+    margin-bottom: 8px;
+  }
+
+  .contact-us-textarea {
+    padding: 21px 26px;
+    min-height: 170px;
+  }
+
+  .submit-btn {
+    padding: 16px 32px;
+    font-family: AxiformaBold;
+    border-radius: 10px;
+    background-color: #005981;
+    border: none;
+    color: white;
+  }
+
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+  }
+}
