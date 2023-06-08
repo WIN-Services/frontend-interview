@@ -1,33 +1,199 @@
+h1 {
+  font-size: 50px;
+  line-height: 70px;
+}
+h2 {
+  font-size: 48px;
+  line-height: 67.2px;
+}
+h3 {
+  font-size: 46px;
+  line-height: 50px;
+}
+
+.exlarge_text_bold {
+  font-size: 36px;
+  line-height: 160%;
+  font-weight: 700;
+}
+.large_text_bold {
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 800;
+}
+.large_text_light {
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.medium_text_bold {
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 600;
+}
+.medium_text_light {
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 500;
+}
+.normal_text_bold {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.normal_text_light {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.small_text_bold {
+  font-size: 14px;
+  line-height: 22.4px;
+  font-weight: 600;
+}
+.small_text_light {
+  font-size: 14px;
+  line-height: 22.4px;
+  font-weight: 500;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mt-42 {
+  margin-top: 42px;
+}
+.mb-72 {
+  margin-bottom: 72px;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.ml-25 {
+  margin-left: 25px;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  padding: 100px;
+}
+.form_root {
+  width: 100%;
+  padding: 21px 18px;
+  background: #ffffff;
+  box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02),
+    1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02);
+  border-radius: 20px;
+}
+.input_div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.input_div input,
+.input_div textarea {
+  background: #ffffff;
+  border: 1px solid #eff0f7;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 10px;
+  height: 66px;
+  padding: 0 25px;
+  outline: none;
+}
+.input_div textarea {
+  height: 168px;
+  padding: 25px;
+}
+.form_left_content {
+  height: 100%;
+  padding: 31px 21px;
+  background: #fafafa;
+  border-radius: 20px;
+}
+.primary-cta {
+  background: #005981;
+  border-radius: 10px;
+  padding: 16px 32px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  line-height: 160%;
+}
+
+.subscribe_root {
+  background: #eeeeee;
+  border-radius: 12px;
+  padding: 54px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.subs_input input {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 16px 32px;
+  outline: none;
+}
+.secondary_cta {
+  padding: 16px 56px;
+  background: #d4a656;
+  border: 2px solid #d4a656;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 998px) {
+  .mtlg-42 {
+    margin-top: 42px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 850px) {
+  .subs_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .subs_input input{
+    width: fit-content;
+  }
+  .subs_input button{
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .mtsm-42 {
+    margin-top: 42px;
+  }
+}
+@media (max-width: 600px) {
+  .App{
+    padding: 70px;
+  }
+}
+@media (max-width: 500px) {
+  .App{
+    padding: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .App{
+    padding: 30px;
+  }
+  .subs_input input{
+    padding: 16px 4px;
   }
 }
