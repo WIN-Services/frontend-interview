@@ -1,3 +1,12 @@
+:root {
+  --large-text: 1.5625rem;
+  --medium-text: 1.125rem;
+  --normal-text: 0.9rem;
+  --small-text: 0.875rem;
+  --heading1: 3.125rem;
+  --heading2: 3rem;
+  --heading3: 2.25rem;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
