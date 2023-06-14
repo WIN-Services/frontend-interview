@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .App-logo {
@@ -30,4 +37,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main-container {
+  display: flex;
+  margin: 1rem;
+}
+.contact-us {
+  width: 35%;
+    background: #f2f2f2;
+    border-radius: 20px;
+    text-align: left;
+    padding: 0 1rem;
+}
+.contact-us h1 {
+  font-size: var(--heading3);
+}
+.form {
+  padding: 2rem;
+  width: 65%;
+}
+.contact-box {
+  padding-top: 0.5rem;
+}
+.contact-us-title {
+  color: #39336a;
+  font-size: var(--medium-text);
+  font-weight: bold;
+}
+footer {
+  margin-top: 2rem;
+    width: 100%;
+}
+footer h1 {
+  margin-bottom: 0;
+}
+footer p {
+  margin: 1.5rem;
+}
+.footer-container {
+  background: #e7e6e6;;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+  color: white;
+    background: #c58e33;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+/* Resposnive */
+@media screen and (max-width: 767px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  .contact-us, .form {
+    width: 100%;
+    padding: 1rem 0
+  }
+  .contact-us {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+}
+@media screen and (max-width: 550px) {
+button {
+  margin-left: 0;
+}
 }
