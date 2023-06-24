@@ -1,30 +1,29 @@
-# WIN Front End Engineering Interview
 
-## Interview Task
+In case of error of not able to run the application you'll have to sign your ownl created ssl license to run on your browser. I am submitting my  Own generated ssl keys i hope it would be able to run on your machine or else you can definitely contact me to help set the project up .
+Regards devanshu rathee
 
-Build a responsive Contact Us form using this design spec:
 
-https://www.figma.com/file/6xNvWB4RmOb5pMT9DU6Gar/Front-End-Interview?node-id=0%3A1
 
-There is no need to build any backend (api layer, server, database). For simulating form submission, you can do a POST to /api/contact
+## Available Scripts
 
-## Duration
+In the project directory, you can run:
 
-Up to 2 hours.
+### `npm start`
 
-## Submission
-1.  Clone this repo
-2.  Build Contact Us Form. Suggested libraries
-    -  Material UI components - [https://material-ui.com/](https://material-ui.com/)
-    -  Address lookup - [https://www.npmjs.com/package/react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
-4.  Submit a Pull Request (PR)
-5.  In the PR, include a README that includes the following:
-    -  If you made any assumptions, what are they
-    -  Outline what else needs to be done if given more time
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Evaluation
-We are looking for: 
-1. Responsive design (mobile + desktop)
-2. Adherence to brand standards
-3. Completeness
-4. Code clarity / readability
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
