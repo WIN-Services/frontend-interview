@@ -1,33 +1,85 @@
-.App {
-  text-align: center;
+.form_container_left_section{
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h5{
+    
+    font-weight: 800;
+    font-size: 25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p:first-child {
+    color: #1D2B4F
+    ;
+    font-size: 18px;
+    font-weight: 600;
   }
-  to {
-    transform: rotate(360deg);
+ .contact_details_item:nth-child(2){
+font-size: 12px;
+font-weight: 400;
+
   }
+  .form_container{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h2{
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .subscribe_email p{
+    font-size: 18px;
+  }
+  .form_button{
+    background-color: #005981 !important;
+    font-size: 16px !important;
+    line-height: 25.6px !important;
+    height: 58px !important;
+    width: 129px !important;
+    border: none !important;
+  }
+  .form-control {
+    padding: 1.255rem 0.75rem !important;
+  }
+  .subscriber_input{
+    padding: 1rem 0.75rem !important;
+  }
+  .subscribe_button{
+    background-color: #D4A656;
+    border: none !important;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  @media screen and (max-width:568px) {
+    .subscribe_button{
+      margin-top: 1rem;
+      
+    }
+    .form-label {
+      margin-bottom: 0.5rem;
+      font-size: 14px;
+  }
+  h2 {
+    font-size: 28px;
 }
+.subscribe_email p {
+  font-size: 14px;
+}
+.form_button {
+  font-size: 14px !important;
+  
+}
+.subscribe_button {
+ 
+  font-size: 14px;
+  padding: 1rem;
+  width: 93%;
+}
+.form-control {
+ 
+  font-size: 14px;
+ 
+  
+}
+  }
