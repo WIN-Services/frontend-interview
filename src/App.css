@@ -7,6 +7,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
 
 .App-header {
   background-color: #282c34;
