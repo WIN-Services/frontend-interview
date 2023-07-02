@@ -50,7 +50,7 @@ function ContactUs() {
   //api handling for form submission
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    let jwt = ""; // as of now its a empty string as it is a demo
+    let jwt = ""; // as of now its an empty string as it is a demo
     let apiData = {
       method: "POST",
       data: formData,
