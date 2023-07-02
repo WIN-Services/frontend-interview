@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./contactus.css";
-import { TextField } from "@mui/material";
+import { Alert, Snackbar, TextField } from "@mui/material";
 import ContactusFooter from "../../components/footer/ContactusFooter";
+import axios from "axios";
 
 function ContactUs() {
+  const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,9 +42,32 @@ function ContactUs() {
     const sanitizedValue = value.replace(/\n/g, "");
     setFormData({ ...formData, [name]: sanitizedValue });
   };
-  const handleFormSubmit = (e) => {
+
+  const handleToastMessageClose = () => {
+    setOpen(false);
+  };
+
+  //api handling for form submission
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    let jwt = ""; // as of now its a empty string as it is a demo
+    let apiData = {
+      method: "POST",
+      data: formData,
+      headers: {
+        Authorization: jwt,
+        "Content-Type": "application/json",
+      },
+    };
+    setOpen(true);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      zip: "",
+      message: "",
+    });
+    const responseData = await axios("/api/contact", apiData);
   };
 
   return (
@@ -66,6 +91,7 @@ function ContactUs() {
                 <TextField
                   placeholder={field.placeholder}
                   type={field.type}
+                  value={formData[field.name]}
                   name={field.name}
                   variant="outlined"
                   onChange={(e) => handleFormInput(e)}
@@ -81,6 +107,7 @@ function ContactUs() {
               placeholder={"Please type it in here..."}
               type={"text"}
               name="message"
+              value={formData["message"]}
               variant="outlined"
               multiline
               rows={5}
@@ -98,6 +125,19 @@ function ContactUs() {
       <div className="contactusFooter">
         <ContactusFooter />
       </div>
+      <Snackbar
+        open={open}
+        autoHideDuration={3000}
+        onClose={handleToastMessageClose}
+      >
+        <Alert
+          onClose={handleToastMessageClose}
+          severity="success"
+          sx={{ width: "100%" }}
+        >
+          Thank you, we'll get back to you soon.
+        </Alert>
+      </Snackbar>{" "}
     </div>
   );
 }
