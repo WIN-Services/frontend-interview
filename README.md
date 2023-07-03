@@ -1,30 +1,39 @@
-# WIN Front End Engineering Interview
+# Contact Us Form
 
-## Interview Task
+This project is a Contact Us form that uses MUI (Material-UI) for the UI components and Axios for handling API requests. The form allows users to submit their contact information and sends the data to a server using an API call.
 
-Build a responsive Contact Us form using this design spec:
+## Prerequisites
 
-https://www.figma.com/file/6xNvWB4RmOb5pMT9DU6Gar/Front-End-Interview?node-id=0%3A1
+To run this project, you need to have the following installed on your machine:
 
-There is no need to build any backend (api layer, server, database). For simulating form submission, you can do a POST to /api/contact
+- Node.js
+- Yarn (or npm)
 
-## Duration
+## Installation
 
-Up to 2 hours.
+1. Clone the repository or download the source code:
+2. Navigate to the project directory:
+3. Install the dependencies using Yarn or npm install/i:
 
-## Submission
-1.  Clone this repo
-2.  Build Contact Us Form. Suggested libraries
-    -  Material UI components - [https://material-ui.com/](https://material-ui.com/)
-    -  Address lookup - [https://www.npmjs.com/package/react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
-4.  Submit a Pull Request (PR)
-5.  In the PR, include a README that includes the following:
-    -  If you made any assumptions, what are they
-    -  Outline what else needs to be done if given more time
 
-## Evaluation
-We are looking for: 
-1. Responsive design (mobile + desktop)
-2. Adherence to brand standards
-3. Completeness
-4. Code clarity / readability
+This command will run the app in development mode and open it in your default browser. The app will automatically reload if you make any edits.
+
+2. Fill out the Contact Us form with your information and click the Submit button.
+
+3. If the submission is successful, a success message will be displayed.
+
+## Dependencies
+
+- React: JavaScript library for building user interfaces
+- Material-UI (MUI): UI component library for React that follows the Material Design guidelines
+- Axios: Promise-based HTTP client for making API requests
+
+## Project Structure
+
+The project structure is organized as follows:
+
+
+## Customization
+
+- You can customize the Contact Us form by modifying the form fields, styling, and validation rules in the `ContactForm.js` component.
+

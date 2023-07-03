@@ -1,0 +1,36 @@
+.footerWrapper {
+  border-radius: 12px;
+  background: #eee;
+  padding: 2rem 0 3rem 0;
+  text-align: center;
+}
+.footerWrapper h3 {
+  color: #000;
+  font-size: 36px;
+  margin: auto;
+  font-weight: 700;
+}
+.footerWrapper p {
+  color: #000;
+  font-size: 18px;
+}
+.footerWrapper .submitEmail {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.footerWrapper .submitEmail input {
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 10px;
+  width: 30%;
+}
+.footerWrapper .submitEmail button {
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color, #d4a656);
+  background: var(--secondary-color, #d4a656);
+  padding: 10px 20px;
+}
