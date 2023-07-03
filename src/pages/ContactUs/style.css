@@ -1,0 +1,89 @@
+.formInfo {
+	/* Rectangle 2429 */
+
+/* position: absolute; */
+/* left: 8.4%;
+right: 50.79%;
+top: 9.31%;
+bottom: 38.17%; */
+
+background: #FAFAFA !important;
+border-radius: 20px !important;
+margin-top: 3% !important;
+margin-left: 3% !important;
+/* height: 80% !important; */
+
+}
+
+.mainContainer {	
+	font-family: 'Open Sans' !important;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 0;
+	bottom: 36.87%;
+	/* height: 100%; */
+
+	background: #FFFFFF !important;
+	box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02), 1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02) !important;
+	border-radius: 20px;
+
+}
+
+.subscribeCardInner {
+/* Frame 39581 */
+
+/* Auto layout */
+/* display: flex!important;
+flex-direction: column!important;
+align-items: flex-start!important;
+padding: 52px 184px!important;
+gap: 10px!important; */
+
+/* position: absolute!important; */
+width: 98%;
+height: 90 vh!important;
+left: 91px!important;
+/* top: 888px !important; */
+
+/* background: #FAFAFA !important; */
+border-radius: 12px !important;
+
+
+}
+.submitBtn {
+	
+/* Secondary Color */
+background: #D4A656 !important;
+/* Secondary Color */
+border: 2px solid #D4A656 !important;
+border-radius: 10px !important;
+
+
+/* Start now */
+
+width: 217px !important;
+/* height: 28px !important; */
+
+
+font-style: normal !important;
+font-weight: 700 !important;
+font-size: 20px !important;
+line-height: 28px !important;
+/* identical to box height, or 140% */
+/* display: flex !important;
+align-items: center !important;
+text-align: center !important; */
+margin-left: 20px !important;
+margin-top: 20px !important;
+/* Frame */
+color: #FFFFFF !important;
+
+
+/* Inside auto layout */
+flex: none !important;
+order: 0 !important;
+flex-grow: 0 !important;
+
+
+}
