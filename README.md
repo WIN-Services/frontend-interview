@@ -1,30 +1,24 @@
 # WIN Front End Engineering Interview
 
-## Interview Task
+## Assumptions made:
 
-Build a responsive Contact Us form using this design spec:
+1. Mobile number format is a US mobile number in the format given in the design -> (123) 456-7890
+2. Zipcode is a valid 5 digit zip code
+3. The submit button shall remain disabled until all the five fields are filled
+4. A success popup should be shown on the submission of the form
 
-https://www.figma.com/file/6xNvWB4RmOb5pMT9DU6Gar/Front-End-Interview?node-id=0%3A1
 
-There is no need to build any backend (api layer, server, database). For simulating form submission, you can do a POST to /api/contact
+## If given more time
 
-## Duration
+1. Unit tests could be added for the component
 
-Up to 2 hours.
 
-## Submission
-1.  Clone this repo
-2.  Build Contact Us Form. Suggested libraries
-    -  Material UI components - [https://material-ui.com/](https://material-ui.com/)
-    -  Address lookup - [https://www.npmjs.com/package/react-places-autocomplete](https://www.npmjs.com/package/react-places-autocomplete)
-4.  Submit a Pull Request (PR)
-5.  In the PR, include a README that includes the following:
-    -  If you made any assumptions, what are they
-    -  Outline what else needs to be done if given more time
+### Note:
 
-## Evaluation
-We are looking for: 
-1. Responsive design (mobile + desktop)
-2. Adherence to brand standards
-3. Completeness
-4. Code clarity / readability
+In Node.js v17 a security vulnerability was fixed which resulted in a breaking change in the SSL packages available on NPM. Attempting to run the project as it is results in the following error with Node.js >=v17:
+
+`Error: error:0308010C:digital envelope routines::unsupported`
+
+There are multiple options to fix it. One way to quickly make a change to start local development is to run the following command which enforces all vulnerability fixes for the packages.
+
+`npm audit fix --force`
