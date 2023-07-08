@@ -9,10 +9,12 @@ import {
 import {
   isEmailValid,
   isMobileValid,
+  isZipCodeValid,
   whiteSpaceValid,
 } from "../../Constant/Validations";
 import axios from "axios";
 import "./index.scss";
+import { Strings } from "../../Constant/Strings";
 
 const Index = () => {
   const [userName, setUserName] = useState("");
@@ -35,6 +37,18 @@ const Index = () => {
   const [emailSubscribeErrMsg, setEmailSubscribeErrMsg] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showModalSubscribe, setShowModalSubscribe] = useState(false);
+
+  const {
+    email_err_msg,
+    name_err_msg,
+    mobile_err_msg,
+    zipcode_err_msg,
+    msg_err,
+    subscribe_heading,
+    subscribe_msg,
+    subscribe_success_msg,
+    form_success_msg,
+  } = Strings;
 
   const contact_us_details = [
     {
@@ -76,7 +90,7 @@ const Index = () => {
       setMobileErrMsg(true);
     }
 
-    if (zipCode.length === 6) {
+    if (isZipCodeValid(zipCode)) {
       setZipCodeErrMsg(false);
     } else {
       setZipCodeErrMsg(true);
@@ -165,7 +179,7 @@ const Index = () => {
                     }}
                   />
                   {onloadName && nameErrMsg && (
-                    <p className="error-msg">Please enter valid name</p>
+                    <p className="error-msg">{name_err_msg}</p>
                   )}
                 </div>
 
@@ -183,7 +197,7 @@ const Index = () => {
                     }}
                   />
                   {onloadEmail && emailErrMsg && (
-                    <p className="error-msg">Please enter valid email id</p>
+                    <p className="error-msg">{email_err_msg}</p>
                   )}
                 </div>
               </div>
@@ -203,7 +217,7 @@ const Index = () => {
                     }}
                   />
                   {onloadMobile && mobileErrMsg && (
-                    <p className="error-msg">Please enter valid phone number</p>
+                    <p className="error-msg">{mobile_err_msg}</p>
                   )}
                 </div>
 
@@ -216,7 +230,7 @@ const Index = () => {
                     margin="normal"
                     value={zipCode}
                     inputProps={{
-                      maxLength: 6,
+                      maxLength: 5,
                     }}
                     onChange={(e) => {
                       setZipCode(e.target.value);
@@ -225,7 +239,7 @@ const Index = () => {
                     className="text-field"
                   />
                   {onloadZipcode && zipcodeErrMsg && (
-                    <p className="error-msg">Please enter valid zip code</p>
+                    <p className="error-msg">{zipcode_err_msg}</p>
                   )}
                 </div>
               </div>
@@ -246,7 +260,7 @@ const Index = () => {
                     }}
                   />
                   {onloadMessage && messageErrMsg && (
-                    <p className="error-msg">Please enter valid message</p>
+                    <p className="error-msg">{msg_err}</p>
                   )}
                 </div>
               </div>
@@ -264,11 +278,8 @@ const Index = () => {
           </div>
         </div>
         <div className="subscribe-container">
-          <h1>Subscribe to our emails</h1>
-          <p>
-            Enter your email address to receive the latest notifications,
-            newsletters, and updates from WIN!
-          </p>
+          <h1>{subscribe_heading}</h1>
+          <p>{subscribe_msg}</p>
           <div className="input-wrapper">
             <div>
               <TextField
@@ -281,9 +292,7 @@ const Index = () => {
                 className="text-field"
               />
               {emailSubscribeErrMsg && (
-                <div className="error-msg">
-                  Please enter valid email address
-                </div>
+                <div className="error-msg">{email_err_msg}</div>
               )}
             </div>
             <Button className="submit-btn" onClick={handleSubscribe}>
@@ -296,7 +305,7 @@ const Index = () => {
       <Dialog open={showModal} onClose={handleClose}>
         <div className="success-dialog-box">
           <h4>Thank you!</h4>
-          <p>You have successfully submitted</p>
+          <p>{form_success_msg}</p>
           <Button className="ok-btn" onClick={handleClose}>
             Ok
           </Button>
@@ -306,7 +315,7 @@ const Index = () => {
       <Dialog open={showModalSubscribe} onClose={handleCloseSubscribe}>
         <div className="success-dialog-box">
           <h4>Thank you!</h4>
-          <p>You have successfully subscribed</p>
+          <p>{subscribe_success_msg}</p>
           <Button className="ok-btn" onClick={handleCloseSubscribe}>
             Ok
           </Button>
