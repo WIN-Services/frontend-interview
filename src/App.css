@@ -8,6 +8,20 @@
   pointer-events: none;
 }
 
+::placeholder {
+  font-family: AxiformaRegular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.error-msg {
+  margin: 0px;
+  font-size: 12px;
+  font-family: AxiformaRegular;
+  color: red;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
