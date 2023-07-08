@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "AxiformaRegular";
+  src: local("AxiformaRegular"),
+    url("./fonts/Axiforma-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AxiformaMedium";
+  src: local("Axiformabold"), url("./fonts/Axiforma-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AxiformaBold";
+  src: local("Axiformabold"), url("./fonts/Axiforma-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AxiformaExtraBold";
+  src: local("Axiformabold"), url("./fonts/Axiforma-Heavy.woff") format("woff");
+}
