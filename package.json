@@ -3,8 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.7",
+    "axios": "^1.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-phone-input-2": "^2.15.1",
+    "react-places-autocomplete": "^7.3.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {

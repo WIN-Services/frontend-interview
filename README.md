@@ -28,3 +28,9 @@ We are looking for:
 2. Adherence to brand standards
 3. Completeness
 4. Code clarity / readability
+
+# Outline what else needs to be done if given more time : 
+1. design specs improvement 
+2. better styling and code integration using tailwind css and scss 
+3. custom error handling for form 
+4. show errors in case of api failure (suggested library : react-toastify)
