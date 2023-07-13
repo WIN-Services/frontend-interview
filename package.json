@@ -2,7 +2,10 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "dependencies": { 
+    "@chakra-ui/react": "^2.0.0",
+    "framer-motion": "^6",
+    "react-beautiful-dnd": "^13.1.0",
     "@emotion/cache": "^11.10.5",
     "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",

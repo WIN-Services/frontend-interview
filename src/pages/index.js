@@ -11,7 +11,7 @@ import {
   import { useEffect, useState } from "react";
 import { fetchApi } from "../services/api";
 import { toast } from "react-toastify";
-import  { ItemDragging } from "devextreme-react/list";
+import { useRouter } from "next/router";
 
   
   const useStyles = makeStyles({
@@ -49,6 +49,8 @@ import  { ItemDragging } from "devextreme-react/list";
     const [isEdited, setIsEdited] = useState(false);
     const [editedId, setEditedId] = useState(null);
     const classes = useStyles();
+
+    const router = useRouter();
   
     const onChange = (e) => {
       setInputVal(e.target.value);
@@ -228,7 +230,19 @@ import  { ItemDragging } from "devextreme-react/list";
               </>
             );
           })}
-        </List>
+        </List> 
+
+        <Button  size="large"
+          variant="outlined"
+          color="primary"
+          className={classes.addButton}
+          style={{
+            marginTop: 20
+          }} 
+          onClick={()=>router.push("/taskdraganddrop")}
+          >
+            Drag and Drop 
+        </Button>
       </Container>
     );
   }
