@@ -12,11 +12,14 @@ import {
 import { ThemeProvider } from "@mui/material/styles";
 import { createEmotionCache } from "../utils/create-emotion-cache";
 import "../theme/styles.scss";
+import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
+
 import { theme } from "../theme";
 import { useRouter } from "next/router";
 import json2mq from "json2mq";
 import getConfig from "next/config";
+import { ToastContainer, toast } from "react-toastify";
 const clientSideEmotionCache = createEmotionCache();
 
 const App = (props) => {
@@ -45,9 +48,7 @@ const App = (props) => {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>
-          Contact Us Page
-        </title>
+      
        
         <meta
           name="viewport"
@@ -60,6 +61,7 @@ const App = (props) => {
       
           <ThemeProvider theme={theme}>
             <CssBaseline />
+            <ToastContainer position="top-right" autoClose={700} />
             
               {getLayout(<Component {...pageProps} />)}
             
