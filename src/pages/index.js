@@ -243,6 +243,21 @@ import { useRouter } from "next/router";
           >
             Drag and Drop 
         </Button>
+        <Button  size="large"
+          variant="outlined"
+          color="primary"
+          className={classes.addButton}
+          style={{
+            marginTop: 20,
+            marginLeft: 15
+          }} 
+          onClick={ ()=> { 
+            localStorage.removeItem("access_token");
+            router.push("/login");
+            } }
+          >
+            Logout 
+        </Button>
       </Container>
     );
   }
