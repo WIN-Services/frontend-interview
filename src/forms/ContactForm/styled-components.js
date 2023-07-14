@@ -1,7 +1,8 @@
 import { styled } from "styled-components";
 
-const primaryColor = "#000";
-const secondaryColor = "#ff0000";
+const blackColor = "#000";
+const dangerRedColor = "#ff0000";
+const greenColor = "#00ff00";
 const neutralColor = "#eff0f6";
 const placeholderColor = "#6f6c90";
 const boxShadowColor = "rgba(19, 18, 66, 0.07)";
@@ -23,7 +24,7 @@ export const UserDetailsForm = styled.div`
 `;
 
 export const StyledLabel = styled.label`
-  color: ${primaryColor};
+  color: ${blackColor};
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -44,7 +45,7 @@ export const StyledTextArea = styled.textarea`
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
-  border: 1px solid ${(props) => (props.error ? secondaryColor : neutralColor)};
+  border: 1px solid ${(props) => (props.error ? dangerRedColor : neutralColor)};
 
   &::placeholder {
     color: ${placeholderColor};
@@ -56,4 +57,14 @@ export const ContactUsForm = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+`;
+
+export const SuccessMessageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  color: ${greenColor};
+  background: ${neutralColor};
 `;

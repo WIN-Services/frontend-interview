@@ -5,6 +5,7 @@ import {
   FormItem,
   StyledLabel,
   StyledTextArea,
+  SuccessMessageWrapper,
   UserDetailsForm,
 } from "./styled-components";
 import useContactForm from "./useContactForm";
@@ -23,6 +24,7 @@ const ContactForm = () => {
     setMessage,
     errors,
     handleSubmit,
+    successMessage,
   } = useContactForm();
 
   const handleNameChange = (e) => {
@@ -103,8 +105,12 @@ const ContactForm = () => {
           />
           {errors.message && <ErrorText>{`${errors.message} !`}</ErrorText>}
         </FormItem>
-
-        <CustomButton type="submit">Send</CustomButton>
+        {successMessage && (
+          <SuccessMessageWrapper>{successMessage}</SuccessMessageWrapper>
+        )}
+        <CustomButton type="submit" disabled={successMessage}>
+          Send
+        </CustomButton>
       </ContactUsForm>
     </form>
   );

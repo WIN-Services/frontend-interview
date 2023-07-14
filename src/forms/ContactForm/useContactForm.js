@@ -7,6 +7,7 @@ const useContactForm = () => {
   const [zipCode, setZipCode] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
 
   const validateForm = () => {
     const newErrors = {};
@@ -64,6 +65,7 @@ const useContactForm = () => {
         });
 
         if (response.ok) {
+          setSuccessMessage("Form submitted successfully");
           console.log("Form submitted successfully");
         } else {
           console.log("Form submission failed");
@@ -89,6 +91,7 @@ const useContactForm = () => {
     setMessage,
     errors,
     handleSubmit,
+    successMessage,
   };
 };
 
