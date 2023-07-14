@@ -28,3 +28,14 @@ We are looking for:
 2. Adherence to brand standards
 3. Completeness
 4. Code clarity / readability
+
+
+# Assumptions 
+1. Assumed this is a ReactJs javascript project.
+2. I used Styled components for styling.
+
+# What could have been better if given more time
+1. Adding TypeScript to project.
+2. Adding Router.
+3. Building API.
+
