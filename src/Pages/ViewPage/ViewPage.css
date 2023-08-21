@@ -1,0 +1,30 @@
+.iconGroup {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.iconButton {
+  padding: 0 !important;
+}
+
+.avatarBack {
+  background: black !important;
+}
+
+.avatarEdit {
+  background: #005981 !important;
+}
+
+.avatarDelete {
+  background: #f00 !important;
+}
+
+.iconColorWhite {
+  color: white !important;
+}
+
+.buttonLabel {
+  display: inline-block !important;
+  margin-left: 5px !important;
+}
