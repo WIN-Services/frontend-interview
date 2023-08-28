@@ -7,15 +7,21 @@ import AddTaskIcon from "../assets/svg/add_task_icon.svg";
 type HeaderProps = {
   userData: any;
   handleAddTask: () => void;
+  handleLogoPress: () => void;
 };
 
-function Header({ userData, handleAddTask }: HeaderProps) {
+function Header({ userData, handleAddTask, handleLogoPress }: HeaderProps) {
   return (
     <div>
       <HeaderContainer>
         <Box>
           <img src={Logo_Ellipse} alt="logo ellipse" className="logo-ellipse" />
-          <img src={WinHomeLogo} alt="Win home logo" className="win-logo" />
+          <img
+            src={WinHomeLogo}
+            alt="Win home logo"
+            className="win-logo"
+            onClick={handleLogoPress}
+          />
         </Box>
 
         <InfoBox>

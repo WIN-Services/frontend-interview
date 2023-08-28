@@ -32,6 +32,14 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 75%;
+  text-overflow: ellipsis;
+  max-height: 2.5rem;
+  overflow: hidden;
 }
 
 .task-header {
@@ -53,7 +61,7 @@ body {
 }
 
 .delete-icon {
-  margin-right: 3rem;
+  margin-right: 2rem;
   cursor: pointer;
 }
 
@@ -65,8 +73,38 @@ body {
   font-weight: 400;
   line-height: normal;
 
-  padding: 5px 12px;
-  border-radius: 27px;
+  padding: 7px 4rem;
+  border-radius: 36px;
   background: #005981;
   cursor: pointer;
+}
+
+.task-view-title {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+}
+
+.task-view-description {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  padding-bottom: 5rem;
+}
+
+.add-task-instruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
 }

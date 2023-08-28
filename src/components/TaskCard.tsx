@@ -49,7 +49,7 @@ function TaskCard({
 export default TaskCard;
 
 const TaskContainer = styled(Box)`
-  padding: 15px 10px;
+  padding: 15px 2rem;
   background-color: #fff;
   border-radius: 9px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
@@ -57,6 +57,7 @@ const TaskContainer = styled(Box)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 `;
 
 const ActionWrapper = styled(Box)`

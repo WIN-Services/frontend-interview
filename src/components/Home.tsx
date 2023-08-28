@@ -6,6 +6,7 @@ import { useLocalStorage } from "usehooks-ts";
 import { Container } from "@mui/material";
 import TaskList from "./TaskList";
 import AddEditTask from "./AddEditTask";
+import ViewTask from "./ViewTask";
 
 type Mode = "list" | "add" | "edit" | "view";
 
@@ -36,6 +37,7 @@ function Home() {
 
   const handleAddTask = () => {
     setMode("add");
+    setActiveTaskId(null);
   };
 
   const handleEditPress = (taskId: string) => {
@@ -49,9 +51,13 @@ function Home() {
   };
 
   const handleDeletePress = (taskId: string) => {
+    setActiveTaskId(null);
     const updatedTaskList = taskList.filter((task) => task.taskId !== taskId);
 
     setTaskList([...updatedTaskList]);
+    if (mode !== "list") {
+      setMode("list");
+    }
   };
 
   const handleSubmitTask = (
@@ -88,9 +94,17 @@ function Home() {
     setMode("list");
   };
 
+  const handleBackPress = () => {
+    setMode("list");
+  };
+
   return (
     <div>
-      <Header userData={userData} handleAddTask={handleAddTask} />
+      <Header
+        userData={userData}
+        handleAddTask={handleAddTask}
+        handleLogoPress={() => setMode("list")}
+      />
       <Container>
         {mode === "list" && (
           <TaskList
@@ -107,6 +121,16 @@ function Home() {
             taskTitle={activeTask?.title}
             taskDescription={activeTask?.description}
             handleSubmitTask={handleSubmitTask}
+          />
+        )}
+        {mode === "view" && (
+          <ViewTask
+            activeTaskId={activeTaskId}
+            title={activeTask?.title}
+            description={activeTask?.description}
+            handleBackPress={handleBackPress}
+            handleEditPress={handleEditPress}
+            handleDeletePress={handleDeletePress}
           />
         )}
       </Container>

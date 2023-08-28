@@ -17,17 +17,23 @@ function TaskList({
 }: TaskListProps) {
   return (
     <>
-      <div className="task-text task-header">Today Tasks</div>
-      {taskList?.map((task) => (
-        <TaskCard
-          key={`${task.taskId}`}
-          taskId={task.taskId}
-          task={task?.title || ""}
-          handleEditPress={handleEditPress}
-          handleViewPress={handleViewPress}
-          handleDeletePress={handleDeletePress}
-        />
-      ))}
+      <div className="task-text task-header">Todays Tasks</div>
+      {taskList?.length ? (
+        taskList?.map((task) => (
+          <TaskCard
+            key={`${task.taskId}`}
+            taskId={task.taskId}
+            task={task?.title || ""}
+            handleEditPress={handleEditPress}
+            handleViewPress={handleViewPress}
+            handleDeletePress={handleDeletePress}
+          />
+        ))
+      ) : (
+        <div className="add-task-instruction">
+          <span>Please add your tasks ↗️</span>
+        </div>
+      )}
     </>
   );
 }
